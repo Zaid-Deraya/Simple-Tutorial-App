@@ -17,7 +17,7 @@ public interface TutorialService {
 
     public ResponseEntity<HttpStatus> deleteTutorial(long id);
 
-    public  ResponseEntity<Tutorial> updateTutorial(long id, Tutorial tutorial);
+    public ResponseEntity<Tutorial> updateTutorial(long id, Tutorial tutorial);
 
     public ResponseEntity<Tutorial> getTutorialById(long id);
 }
