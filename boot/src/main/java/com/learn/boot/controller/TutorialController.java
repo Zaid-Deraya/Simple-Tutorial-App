@@ -35,8 +35,6 @@ public class TutorialController {
 
     @PostMapping("/tutorials")
     public ResponseEntity<Tutorial> createTutorial(@RequestBody Tutorial tutorial) {
-
-        LOGGER.getName();
         return tutorialService.createTutorial(tutorial);
 
     }
