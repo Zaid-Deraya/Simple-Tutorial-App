@@ -2,7 +2,9 @@ package com.learn.boot.model;
 
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "tutorials")
@@ -28,12 +30,11 @@ public class Tutorial {
     private boolean published;
 
 
-
     public Tutorial(String title, String description, String author, boolean published) {
         this.title = title;
         this.description = description;
         this.author = author;
         this.published = published;
     }
-    
+
 }
