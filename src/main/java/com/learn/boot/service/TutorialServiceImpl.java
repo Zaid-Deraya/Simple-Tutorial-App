@@ -20,7 +20,7 @@ public class TutorialServiceImpl implements TutorialService {
     @Override
     public ResponseEntity<Tutorial> createTutorial(Tutorial tutorial) {
         try {
-            Tutorial _tutorial = tutorialRepository.save(new Tutorial(tutorial.getTitle(), tutorial.getDescription(), tutorial.getAuthor(), tutorial.isPublished()));
+            Tutorial _tutorial = tutorialRepository.save(new Tutorial(tutorial.getTitle(), tutorial.getDescription(), tutorial.getTutor(), tutorial.isPublished()));
             return new ResponseEntity<>(_tutorial, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);

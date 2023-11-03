@@ -23,17 +23,17 @@ public class Tutorial {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "author")
-    private String author;
+    @Column(name = "tutor")
+    private String tutor;
 
     @Column(name = "published")
     private boolean published;
 
 
-    public Tutorial(String title, String description, String author, boolean published) {
+    public Tutorial(String title, String description, String tutor, boolean published) {
         this.title = title;
         this.description = description;
-        this.author = author;
+        this.tutor = tutor;
         this.published = published;
     }
 
