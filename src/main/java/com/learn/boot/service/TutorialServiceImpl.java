@@ -87,6 +87,7 @@ public class TutorialServiceImpl implements TutorialService {
             Tutorial _tutorial = tutorialData.get();
             _tutorial.setTitle(tutorial.getTitle());
             _tutorial.setDescription(tutorial.getDescription());
+            _tutorial.setTutor(tutorial.getTutor());
             _tutorial.setPublished(tutorial.isPublished());
             return new ResponseEntity<>(tutorialRepository.save(_tutorial), HttpStatus.OK);
         } else {
